@@ -11,6 +11,14 @@ sns.pairplot(student_hp)
 
 sns.pairplot(student_hp,
            x_vars=["exam_score"],
-           y_vars=["study_hours_per_day","attendance_percentage", "sleep_hours","exercise_frequency","mental_health_rating"])
+           y_vars=["study_hours_per_day"])
+
+sns.pairplot(student_hp,
+             x_vars=["exam_score"],
+             y_vars=["attendance_percentage"])
+
+sns.pairplot(student_hp,
+             x_vars=["exam_score"],
+             y_vars=["sleep_hours"])
 
 plt.show()
